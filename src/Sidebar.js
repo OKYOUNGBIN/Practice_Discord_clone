@@ -4,7 +4,12 @@ import ExpandMoreSharpIcon from "@mui/icons-material/ExpandMoreSharp";
 import AddIcon from "@mui/icons-material/Add";
 import SidebarChannel from "./SidebarChannel";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
-
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import CallIcon from "@mui/icons-material/Call";
+import { Avatar } from "@mui/material";
+import MicIcon from "@mui/icons-material/Mic";
+import HeadsetIcon from "@mui/icons-material/Headset";
+import SettingsIcon from "@mui/icons-material/Settings";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -31,10 +36,32 @@ function Sidebar() {
       </div>
 
       <div className="sidebar__voice">
-        <SignalCellularAltIcon className="sidebar_voiceIcon" fontSize="large" />
+        <SignalCellularAltIcon
+          className="sidebar__voiceIcon"
+          fontSize="large"
+        />
         <div className="sidebar__voiceInfo">
           <h3>Voice Connected</h3>
           <p>Stream</p>
+        </div>
+
+        <div className="sidebar__voiceIcons">
+          <InfoOutlinedIcon />
+          <CallIcon />
+        </div>
+      </div>
+
+      <div className="sidebar__profile">
+        <Avatar src="" />
+        <div className="sidebar__profileInfo">
+          <h3>redmangos@naver.com</h3>
+          <p>#thisIsMyID</p>
+        </div>
+
+        <div className="sidebar__profileIcons">
+          <MicIcon />
+          <HeadsetIcon />
+          <SettingsIcon />
         </div>
       </div>
     </div>
