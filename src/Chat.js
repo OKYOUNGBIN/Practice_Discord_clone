@@ -1,10 +1,10 @@
 import React from "react";
-import "/";
+import ChatHeader from "./ChatHeader.js";
 
 function Chat() {
   return (
     <div className="chat">
-      <h2>Chat screen</h2>
+      <ChatHeader />
     </div>
   );
 }
