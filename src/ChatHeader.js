@@ -11,7 +11,7 @@ function ChatHeader() {
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
-          <span className="chatHeader_hash">#</span>
+          <span className="chatHeader__hash">#</span>
           Test Channel Name
         </h3>
       </div>
@@ -20,7 +20,7 @@ function ChatHeader() {
         <EditLocationAltRoundedIcon />
         <PeopleAltRoundedIcon />
 
-        <div className="chatHeader_search">
+        <div className="chatHeader__search">
           <input placeholder="Search" />
           <SearchRoundedIcon />
         </div>

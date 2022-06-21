@@ -15,7 +15,7 @@
 .chatHeader__left > h3 {
   display: flex;
   align-items: center;
-  /* color: white; */
+  color: white;
 }
 
 .chatHeader__right {
@@ -41,4 +41,11 @@
   background-color: #2f3135;
   border-radius: 3px;
   padding: 3px;
+}
+
+.chatHeader__search > input {
+  background: transparent;
+  outline-width: 0;
+  color: white;
+  border: none;
 }
