@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import ChatHeader from "./ChatHeader.js";
 import "./Chat.css";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
