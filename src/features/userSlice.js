@@ -17,7 +17,9 @@ export const incrementAsync = createAsyncThunk(
 
 export const userSlice = createSlice({
   name: "user",
-  initialState,
+  initialState: {
+    user: null,
+  },
 
   reducers: {
     login: (state, action) => {
