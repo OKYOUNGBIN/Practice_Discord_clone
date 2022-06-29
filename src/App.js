@@ -26,9 +26,10 @@ function App() {
         );
       } else {
         //
+        dispatch(logout());
       }
     });
-  }, []);
+  }, [dispatch]);
   return (
     <div className="app">
       {user ? (
