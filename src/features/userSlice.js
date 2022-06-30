@@ -1,11 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { fetchCount } from "./userAPI";
 
-const initialState = {
-  value: 0,
-  status: "idle",
-};
-
 export const incrementAsync = createAsyncThunk(
   "user/fetchCount",
   async (amount) => {
