@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { act } from "react-dom/test-utils";
+//import { act } from "react-dom/test-utils";
 import { fetchCount } from "./appAPI";
 
 export const incrementAsync = createAsyncThunk(

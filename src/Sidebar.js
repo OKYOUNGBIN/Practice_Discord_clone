@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
 import ExpandMoreSharpIcon from "@mui/icons-material/ExpandMoreSharp";
 import AddIcon from "@mui/icons-material/Add";
@@ -16,7 +16,6 @@ import db, { auth } from "./firebase";
 
 function Sidebar() {
   const user = useSelector(selectUser);
-
   const [channels, setChannels] = useState([]);
 
   useEffect(() => {
@@ -34,8 +33,7 @@ function Sidebar() {
     const channelName = prompt("Enter a new channel name");
 
     if (channelName) {
-      db.collection("channels").add;
-      ({
+      db.collection("channels").add({
         channelName: channelName,
       });
     }
@@ -61,7 +59,7 @@ function Sidebar() {
             <SidebarChannel
               key={id}
               id={id}
-              channelName={(channel, channelName)}
+              channelName={channel.channelName}
             />
           ))}
         </div>
